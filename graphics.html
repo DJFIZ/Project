@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<!---Dustin Ficenec, 8/4/2020-->
+<!-- embedded style used in centering images -->
+<!-- inline style used in changing color of h3 -->
+<html lang='en'>
+<head>
+<title>2D Game Design - Graphics</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="proj.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	.aligncenter {
+    		text-align: center;
+	}
+
+	.btn {
+  		background-color: DodgerBlue;
+  		border: none;
+  		color: white;
+  		padding: 12px 30px;
+  		cursor: pointer;
+  		font-size: 20px;
+	}	
+
+	/* Darker background on mouse-over */
+	.btn:hover {
+  		background-color: RoyalBlue;
+	}
+</style>
+</head>
+<body>
+<header>
+	<h1>2D Game Design</h1>
+	<h2>for beginners<br>by a beginner</h2>
+</header>
+<div id="topnav">
+	<ul>
+  	<li><a href="index.html">Home</a></li>
+  	<li><a class = "active" href="graphics.html">Graphics</a></li>
+  	<li><a href="coding.html">Coding</a></li>
+	<li><a href="resources.html">resources</a></li>
+	</ul>
+</div><!-- closes navbar -->
+<div id="graphicshero">
+</div>
+<h3 style="color: black;">Graphics</h3>
+<main>
+
+<div class="row">
+	<div class="column">
+	<h4>Pixel Art</h4>
+	<br/>
+    	<p>When referring to the graphics of a 2D game, you may also refer to them as pixel art. 2D graphics, especially in modern times, center around highly stylized yet simple pixel art. The most difficult thing I encountered when creating my own pixel art was the confinement to a small number of pixels. Creating good pixel art is heavily reliant on conveying important details in a small space. The creation of sprites and spritesheets is central pixel art, as they ultimately represent the characters of your game. It can be quite difficult to create sprites when starting out, but as you can see to the right however, progress is not impossible! Through a number of attempts in photoshop I arrived at a character I was satisfied with. Use whatever pixel editor you like and get to placing those pixels. 	</p>
+<br/>
+	<p class="aligncenter">
+	<img src="assets/tutorial.gif" class="float-center" alt="Animation tutorial" height="512" width="512">
+	</p>
+	</div>
+	<div class="column">
+	<p class="aligncenter">
+	<img src="assets/sprites.png" class="float-center" alt="Two game sprites" height="382" width="512">
+	</p>
+	<br/><br/>
+	<h4>Tutorials</h4>
+	<br/>
+    	<p>Designing art of any kind is obviously easier if one is already artistic, but don't let a lack of experience dissuade you. Speaking from firsthand experience, there are hundreds, if not thousands, of free resources that help teach people how to create good looking pixel art. Websites such as <a href="https://blog.studiominiboss.com/pixelart" target="_blank">Studio Miniboss</a> provide numerous, highly detailed tutorials on not only pixel art, but animation as well (such as the one to the left). </p>
+  	<br/>
+	<p class="aligncenter">To download an example of my first spreadsheet:</p>
+	<a href="assets/graphicsbg.png" download="spritesheet">
+		<button class="btn"><i class="fa fa-download"></i> Download</button>
+	</a>
+	</div>
+</div>
+
+<footer>
+	Copyright &copy; 2020 Dustin Ficenec<br/>
+</footer>
+</main>
+</body>
+</html>

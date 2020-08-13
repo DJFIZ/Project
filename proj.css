@@ -1,0 +1,265 @@
+/* Dustin Ficenec 2020 */
+* {
+	margin: 0;
+	padding: 0;
+}
+/* adds 2 fonts */
+@font-face{
+	font-family: EliantoRegular;
+    	src: url(assets/Elianto-Regular.otf);
+    	font-weight:400;
+}
+@font-face{
+	font-family: Simplifica;
+    	src: url(assets/SIMPLIFICA.ttf);
+    	font-weight:400;
+}
+body { /* body attributes */
+	background-color: #1A1A1D;
+	display: block;
+}
+header{ /* header attributes */	
+	margin: 10px;
+	padding-left: 20px;
+}
+label { 
+	float: left; 
+	display: inline-block; 
+	text-align: right; 
+	font-weight: bold;
+	width: 10em;
+	margin-right: 5px;
+}
+input, textarea { 
+	margin-bottom: 2em; 
+   	display: block; 
+} 
+button{
+	text-align: right;
+	margin-left: 230px;
+}
+h1 { /* Heading style 1: used for main title */
+	font-family: EliantoRegular;
+    	font-size: 40px;
+	color: #C3073F;
+    	text-transform: uppercase;
+    	font-style: normal;
+    	letter-spacing: 1px;
+    	text-decoration: none;
+	float: left;
+	padding-right: 20px;
+}
+h2 { /* Heading style 2: used for subtitles */
+	margin-left: 130px;
+	font-family: EliantoRegular;
+    	font-size: 20px;
+	color: #C3073F;
+    	font-style: normal;
+    	letter-spacing: 1px;
+    	text-decoration: none;
+}
+h3 { /* Heading style 3: used for titles of the pages */
+	font-family: "Source Sans Pro", sans-serif;
+    	font-size: 30px;
+	color: white;
+    	text-transform: uppercase;
+    	font-style: normal;
+    	letter-spacing: 1px;
+    	text-decoration: none;
+	padding: 20px;
+	border-bottom: 1px solid #6F2232;
+	transform:translate(-0%, -90%);
+}
+h4 { 
+	font-weight: bold;
+}
+/* link colors */
+a:link{
+	color: #C3073F;
+}
+a:visited{
+	color: #950740;
+}
+footer { /* footer attributes */
+	font-size: .60em;
+	font-style: italic;
+	text-align: center;
+	padding: 1em;
+}
+ /*table and table elements below */
+table {
+	border: 1px solid #C3073F;
+	border-collapse: collapse;
+	width: 90%;
+}
+th {
+	padding: 5px;
+	border: 1px solid #C3073F;
+}
+td {
+	padding: 5px;
+	border: 1px solid #C3073F;
+	text-align: center;
+}
+.text {
+	text-align: left;
+}
+main{ /* handles all text excluding titles/nav/footer */
+	font-style: normal;
+    	font-weight: 500;
+    	font-size: 22px;
+    	letter-spacing: .5px;
+    	line-height: 24px;
+	display: block;
+	padding-left: 60px;
+	padding-right: 60px;
+	font-family: Simplifica;
+	color: white;
+}
+li {
+	margin-left: 60px;
+}
+.column {
+  	float: left;
+	padding: 10px;
+	width: 48%;
+}
+.row:after {
+  	content: "";
+  	display: table;
+  	clear: both;
+}
+/* Scrollbar styles */
+::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+}
+::-webkit-scrollbar-track {
+	border: 1px #C3073F;
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+	background: #C3073F;  
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #C3073F;  
+}
+/* allow image scaling */
+img {
+  	max-width: 100%;
+}
+/* Heroes to handle background images */
+#homehero {
+	background: url(assets/homebg.png) center center;
+	min-height: 300px;
+    	height: 100%;
+    	background-repeat: no-repeat;
+    	background-attachment: fixed;
+	background-position: center;
+    	background-size: cover;
+	overflow: hidden;
+	-webkit-filter: blur(5px);
+  	filter: blur(5px);
+}
+#graphicshero {
+	background: url(assets/graphicsbg.png) center center;
+	min-height: 300px;
+    	height: 100%;
+    	background-repeat: no-repeat;
+    	background-attachment: fixed;
+	background-position: center;
+    	background-size: cover;
+	overflow: hidden;
+	-webkit-filter: blur(5px);
+  	filter: blur(5px);
+}
+#codinghero {
+	background: url(assets/code.png) center center;
+	min-height: 300px;
+    	height: 100%;
+    	background-repeat: no-repeat;
+    	background-attachment: fixed;
+	background-position: center;
+    	background-size: cover;
+	overflow: hidden;
+	-webkit-filter: blur(5px);
+  	filter: blur(5px);
+	width: 100%;
+}
+/* Style the navbar */
+#topnav {
+  	overflow: hidden;
+  	background-color: #4E4E50;
+}
+
+#topnav a {
+	font-family: EliantoRegular;
+  	color: white;
+	display: inline-block;
+  	text-align: center;
+  	padding: 10px 12px;
+  	text-decoration: none;
+	text-transform: uppercase;
+  	font-size: 17px;
+	letter-spacing: 1px;
+  	border-bottom: 3px solid transparent;
+	
+}
+
+#topnav ul{
+	text-align: center;
+}
+
+#topnav li{
+	padding-left: 30px;
+	padding-right: 30px;
+	display: inline-block;
+}
+
+#topnav a:hover {
+  	border-bottom: 3px solid #C3073C;
+}
+
+#topnav a.active {
+  	border-bottom: 3px solid #C3073C;
+}
+#mobile { display: none; }
+#desktop { display: inline; }
+/* sections for changing display given smaller screens */
+@media only screen and (max-width: 1024px) { /* removes background image and other effects to accomodate a smaller screen */
+	body{
+		margin: 0;
+		padding: 0; 
+	}
+	#hero{
+		padding-top: 1em; 
+	}
+	main{
+		padding: 1em;
+		margin-left: 0;
+		font-size: 90%;
+	}
+	footer{ margin: 0;}
+}
+@media only screen and (max-width: 768px) { /* same as above, but also alters some text size */
+	h1{ 
+		height: 100%;
+		font-size: 2em;
+		padding-left: 0.3em;
+	}
+	h2{
+		height: 100%;
+		font-size: 1em;
+		padding-left: 0.3em;
+	}
+	main{
+		padding: 0.1em 0.6em 0.1em 0.4em;
+	}
+	footer{ padding: 0;}
+	#hero{
+		padding-top: 0.1em;
+	}
+	#mobile { display: inline; }
+	#desktop { display: none; }
+}
